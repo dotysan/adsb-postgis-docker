@@ -1,7 +1,7 @@
 # opensky-postgis-docker
 Dockerfile for Aircraft trajectories in PostGIS talk
 
-Create a `.evn` file that exports your OpenSky Network credentials:
+Create a `.env` file that exports your OpenSky Network credentials:
 
 ```
 export OPENSKY_USER="user name"
@@ -13,7 +13,7 @@ Then start the container:
 
 Then connect to Postgres runnign on port 54321:
 
-`pgsql -h localhost -p 54321 opensky`
+`psql -h localhost -p 54321 opensky`
 
 OpenSky Citation:
 
